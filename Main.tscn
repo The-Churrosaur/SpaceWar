@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://CharShip.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GravitySun.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="RigidBody2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 517, 372 )
+
+[node name="GravitySun" parent="." instance=ExtResource( 2 )]
+position = Vector2( 481.013, 305.643 )
+gravity = -0.1

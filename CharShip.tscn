@@ -4,9 +4,10 @@
 [ext_resource path="res://Rocket.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
+radius = 5.79175
+height = 0.338297
 
-[node name="RigidBody2D" type="RigidBody2D"]
-gravity_scale = 0.0
+[node name="CharShip" type="RigidBody2D"]
 can_sleep = false
 angular_damp = 128.0
 script = ExtResource( 1 )
@@ -16,7 +17,7 @@ scale = Vector2( 1, 3.5 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.3, 0.3 )
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
