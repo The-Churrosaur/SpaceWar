@@ -13,13 +13,13 @@ var label
 func _ready():
 	
 	collider = $CollisionShape2D
-	collider.disabled = true
 	
 	thrust_vector.y = -thrust
 	
 	parent_rigidBody = get_parent()
 	parent_rotation = parent_rigidBody.global_rotation
 	
+	linear_velocity = parent_rigidBody.linear_velocity
 	thrust_vector = thrust_vector.rotated(parent_rotation)
 	
 	label = $Label
